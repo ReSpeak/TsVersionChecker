@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net46</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Versions.csv" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Versions.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Splamy.Ed25519.Toolkit" Version="1.0.2-alpha" />
+  </ItemGroup>
+</Project>
